@@ -37,4 +37,24 @@
   .header-button {
     margin-left: 20px;
   }
+
+  .button-icon {
+    margin-top: 3px;
+    background: none;
+    box-shadow: none;
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .button-icon {
+      display: none;
+
+      &:hover {
+        
+      }
+    }
+  }
 }
