@@ -48,13 +48,29 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 990px) {
     .button-icon {
       display: none;
-
-      &:hover {
-        
-      }
     }
   }
+
+  @media (max-width: 990px) {
+    .logo,
+    .text {
+      display: none;
+    }
+    .auth-buttons {
+      display: none;
+    }
+  }
+
+  /* @media (max-width: 700px) {
+    .auth-buttons {
+      display: none;
+    }
+
+    .title {
+      align-self: center;
+    }
+  } */
 }

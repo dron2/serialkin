@@ -16,8 +16,10 @@ function Header() {
       <div className="logo" />
       <span className="text">Сериалы Онлайн</span>
       <div className="grow" />
-      <Button>Регистрация</Button>
-      <Button green className="header-button">Вход</Button>
+      <div className="auth-buttons">
+        <Button>Регистрация</Button>
+        <Button green className="header-button">Вход</Button>
+      </div>
     </header>
   );
 }
