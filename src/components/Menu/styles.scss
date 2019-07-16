@@ -14,13 +14,14 @@
 
 @media (min-width: 990px) and (max-width: 1499px) {
   .main-menu {
-    width: 300px;
+    width: 400px;
   }
 }
 
 @media (max-width: 989px) {
   .main-menu {
-    align-self: stretch;
+    position: fixed;
+    height: 100%;
     margin-top: 0;
     margin-left: -300px;
     width: 300px;
