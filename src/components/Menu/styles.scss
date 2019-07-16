@@ -20,7 +20,7 @@
 
 @media (max-width: 989px) {
   .main-menu {
-    flex-basis: 100%;
+    align-self: stretch;
     margin-top: 0;
     margin-left: -300px;
     width: 300px;

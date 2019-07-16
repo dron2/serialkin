@@ -7,8 +7,14 @@
 
 html,
 body,
-#root {
+#root,
+.wrapper {
   height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
 }
 
 #root {

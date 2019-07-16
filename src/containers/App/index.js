@@ -6,7 +6,9 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <Menu />
+      <div className="wrapper">
+        <Menu />
+      </div>
     </Fragment>
   );
 }
