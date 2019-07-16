@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Icon } from 'react-icons-kit';
@@ -17,7 +18,7 @@ function Header(props) {
           <Icon size={30} icon={th} />
         </div>
       </Button>
-      <a href="/" className="title">SERIALKIN</a>
+      <Link to="/" className="title">SERIALKIN</Link>
       <div className="logo" />
       <span className="text">Сериалы Онлайн</span>
       <div className="grow" />

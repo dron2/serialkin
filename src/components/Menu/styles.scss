@@ -48,12 +48,16 @@
 
   .item {
     margin: 10px 20px;
-    font-size: 17px;
-    color: #fff;
-    transition-duration: .3s;
 
-    &:hover {
-      color: #a8bfd4;
+    a {
+      font-size: 17px;
+      color: #fff;
+      transition-duration: .3s;
+      text-decoration: none;
+
+      &:hover {
+        color: #a8bfd4;
+      }
     }
   }
 }
