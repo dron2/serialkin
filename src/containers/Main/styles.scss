@@ -1,0 +1,52 @@
+.main-page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .card {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main-page {
+    .card {
+      width: 31%;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+      &:nth-child(3) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1499px) {
+  .main-page {
+    .card {
+      width: 48%;
+  
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 989px) {
+  .main-page {
+    .card {
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+}
