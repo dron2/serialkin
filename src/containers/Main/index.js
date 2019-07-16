@@ -5,14 +5,17 @@ import Card from '../../components/Card';
 function Main() {
   return (
     <section className="main-page">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <h1 className="title">Библиотека сериалов</h1>
+      <div className="cards">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </section>
   );
 }
