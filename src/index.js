@@ -5,6 +5,8 @@ import App from './containers/App';
 import store from './redux';
 import './style.scss';
 
+window.getState = store.getState;
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

@@ -1,13 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { Icon } from 'react-icons-kit';
 import { th } from 'react-icons-kit/fa/th';
 import './styles.scss';
+import { switchMenu } from '../../redux/actionCreators/system';
 import Button from '../Button';
 
-function Header() {
+function Header(props) {
+  const { switchMenu } = props;
   return (
     <header className="header">
-      <Button className="button-icon">
+      <Button className="button-icon" onClick={() => switchMenu()}>
         <div>
           <Icon size={30} icon={th} />
         </div>
@@ -24,4 +29,12 @@ function Header() {
   );
 }
 
-export default Header;
+Header.propTypes = {
+  switchMenu: PropTypes.func.isRequired
+};
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+  switchMenu
+}, dispatch);
+
+export default connect(null, mapDispatchToProps)(Header);

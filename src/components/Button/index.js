@@ -4,7 +4,7 @@ import classnames from 'classnames';
 import './styles.scss';
 
 function Button(props) {
-  const { children, green, className } = props;
+  const { children, green, className, onClick } = props;
   return (
     <button
       className={classnames(
@@ -12,6 +12,7 @@ function Button(props) {
         green ? 'button-green' : '',
         className
       )}
+      onClick={onClick}
     >
       {children}
     </button>
@@ -21,7 +22,8 @@ function Button(props) {
 Button.propTypes = {
   children: PropTypes.node,
   green: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 Button.defaultProps = {
